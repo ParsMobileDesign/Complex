@@ -1,0 +1,12 @@
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+/rahyab-hybrid-cpsdk-1.0.2
+/app/src/main/java/ir/parsmobiledesign/quantum/Utility/CryptoHandler.java
+.externalNativeBuild

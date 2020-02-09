@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:text="سفارش جاری"
+        android:gravity="center"
+        android:fontFamily="@font/iransense"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/OrderclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Relax_blue" />
+
+    <RelativeLayout
+        android:id="@+id/orderTotalSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#E7E3E3">
+
+        <TextView
+            android:id="@+id/orderTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="25dp"
+            android:fontFamily="@font/iransense"
+            android:text="0 ریال"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>

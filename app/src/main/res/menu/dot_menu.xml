@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_Update"
+        android:title="@string/Update"
+        app:showAsAction="never"/>
+<!--    <item-->
+<!--        android:id="@+id/action_TechStorApp"-->
+<!--        android:title="فروشگاه  TechStore"-->
+<!--        app:showAsAction="never"/>-->
+    <item
+        android:id="@+id/action_ReportList"
+        android:title="@string/ReportList"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_Reset"
+        android:title="@string/SystemReset"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_LogOut"
+        android:title="@string/SystemLogout"
+        app:showAsAction="never"/>
+</menu>

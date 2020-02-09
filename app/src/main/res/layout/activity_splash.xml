@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+   >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp">
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo_icon" />
+
+    <TextView
+        android:id="@+id/appFirstTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_icon"
+        android:fontFamily="@font/another_danger"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name_first_syllab"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+       />
+    <TextView
+        android:id="@+id/appSecondTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_icon"
+        android:fontFamily="@font/aller_light"
+        android:paddingTop="35dp"
+        android:layout_toRightOf="@id/appFirstTitle"
+        android:layout_toEndOf="@id/appFirstTitle"
+        android:text="@string/app_name_second_syllab"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+       />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/versionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:fontFamily="@font/b_roya"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

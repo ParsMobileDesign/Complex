@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede5e5"
+    android:paddingBottom="30dp"
+    android:layout_marginTop="0dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/loginDiag_btnImgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_clear" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/b_roya"
+        android:text="@string/SystemExit"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/loginDiag_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="11"
+        android:fontFamily="@font/b_roya"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textDirection="ltr" />
+
+    <TextView
+        android:id="@+id/loginDiag_btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/loginDiag_Password"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_click_dialog"
+        android:paddingBottom="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="4dp"
+        android:text="@string/Login"
+        android:textColor="@color/brown"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/loginDiag_btnDiscard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/loginDiag_btnLogin"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/loginDiag_btnLogin"
+        android:background="@drawable/btn_click_dialog"
+        android:paddingBottom="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="4dp"
+        android:text="@string/discard"
+        android:textColor="@color/brown"
+        android:textSize="17dp" />
+
+</RelativeLayout>

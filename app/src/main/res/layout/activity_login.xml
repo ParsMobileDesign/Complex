@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edUserName"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/welcome" />
+
+    <EditText
+        android:id="@+id/edUserName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/edPass"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edittext_login"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:gravity="center"
+        android:hint="شماره موبایل"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingRight="40dp"
+        android:text="1010"
+        android:fontFamily="@font/iransense"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/btnLogin"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edittext_login"
+        android:drawableLeft="@drawable/ic_lock"
+        android:gravity="center"
+        android:hint="رمز عبور"
+        android:text="1010"
+        android:inputType="textPassword"
+        android:fontFamily="@font/iransense"
+
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="32dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_green"
+        android:fontFamily="@font/iransense"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

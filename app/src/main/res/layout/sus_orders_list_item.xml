@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/order_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/iransense"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/order_tableNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/orderReload"
+        android:layout_toStartOf="@id/orderReload"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/iransense"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/order_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_Date"
+        android:layout_alignLeft="@id/order_Date"
+        android:fontFamily="@font/iransense"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/order_TotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/order_Time"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/order_Time"
+        android:fontFamily="@font/iransense"
+        android:text="1240000 ریال"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/orderReload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+</RelativeLayout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btnBoardGame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/boardgame_button_bg_non_round"
+        android:elevation="10dp"
+        android:fontFamily="@font/aller_light"
+        android:text="@string/board_game_title_eng"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    <Button
+        android:id="@+id/btnEscapeRoom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/escaperoom_button_bg_non_round"
+        android:elevation="10dp"
+        android:fontFamily="@font/another_danger"
+
+        android:text="@string/escape_room_title_eng"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btnCafe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/cafe_button_bg_non_round"
+        android:elevation="10dp"
+        android:fontFamily="@font/aller_light"
+        android:text="@string/cafe_title_eng"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+
+    <Button
+        android:id="@+id/btnEvent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/event_button_bg_non_round"
+        android:elevation="10dp"
+        android:fontFamily="@font/aller_light"
+
+        android:text="@string/event_title_eng"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+</LinearLayout>

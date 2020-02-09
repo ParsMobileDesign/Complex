@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:background="@drawable/recycle_item_bg_3dp_corner"
+    android:layout_marginBottom="1dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/item1" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@id/item_image"
+        android:fontFamily="@font/iransense"
+        android:gravity="right"
+        android:text="کیک شکلاتی"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_toRightOf="@id/item_image"
+        android:fontFamily="@font/iransense"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text="2000 تومان"
+        android:textSize="13sp" />
+</RelativeLayout>
+

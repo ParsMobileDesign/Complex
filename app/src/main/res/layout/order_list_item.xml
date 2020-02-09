@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:background="@drawable/recycle_item_bg_3dp_corner"
+    android:layout_marginBottom="1dp"
+    android:elevation="20dp">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_image"
+        android:layout_toRightOf="@id/item_image"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/orderItemPlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_add_brown_24dp" />
+
+        <TextView
+            android:id="@+id/item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iransense"
+            android:text="45"
+            android:textSize="27sp" />
+
+        <ImageView
+            android:id="@+id/orderItemMinus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_remove_brown_24dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@drawable/item1" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_image"
+        android:layout_alignStart="@id/item_image"
+        android:layout_alignLeft="@id/item_image"
+        android:layout_alignEnd="@id/item_image"
+        android:layout_alignRight="@id/item_image"
+        android:fontFamily="@font/iransense"
+        android:gravity="center"
+        android:text="لاته فرانسوی ساز مغربی"
+        android:textSize="13sp" />
+</RelativeLayout>
+

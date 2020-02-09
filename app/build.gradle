@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'RapidNetCompany'
+            keyPassword 'qwaszx12!@'
+            storeFile file('G:/Android Project/RapidNet.jks')
+            storePassword 'RapidNetIr'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "ir.parsmobiledesign.quantum"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1  // 10-30-2019  Pedram
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'x86', 'armeabi-v7a', 'arm64-v8a', 'armeabi'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+//    implementation ("com.github.bumptech.glide:glide:4.11.0") {
+//        exclude group: "com.android.support"
+//    }
+//    //noinspection GradleCompatible
+//    implementation 'com.android.support:support-v4:27.1.1'
+//    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'androidx.databinding:databinding-adapters:1.0.0'
+    implementation 'androidx.databinding:databinding-runtime:1.0.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'cz.msebera.android:httpclient:4.4.1.2'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation 'com.github.samanzamani.persiandate:PersianDate:0.4'
+    implementation 'com.google.android.material:material:1.0.0'
+
+
+}

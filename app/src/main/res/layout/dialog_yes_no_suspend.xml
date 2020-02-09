@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/dialog_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/iransense"
+
+        android:text="@string/accept_payment"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/tablePart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_Title"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/tableNo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iransense"
+            android:text="1231231"/>
+
+        <TextView
+            android:id="@+id/dialog_Table_No_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/iransense"
+            android:text="@string/tableNo"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablePart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/dialogOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/iransense"
+            android:text="@string/paymentOk" />
+
+        <Button
+            android:id="@+id/dialogAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/iransense"
+            android:text="@string/paymentAccept" />
+
+        <Button
+            android:id="@+id/dialogSuspend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/iransense"
+            android:text="@string/paymentSuspend" />
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/dialogCancel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/buttonPart"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:fontFamily="@font/iransense"-->
+<!--        android:text="@string/paymentCancel"-->
+<!--        android:textSize="15sp" />-->
+
+</RelativeLayout>
